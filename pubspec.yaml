@@ -17,7 +17,7 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^1.0.0
 
-repository: https://github.com/Binjal-Knovator/knovi-call-flutter/tree/master
+repository: https://github.com/knovator/vi-call
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
