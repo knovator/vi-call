@@ -9,7 +9,7 @@ void main() {
 }
 
 class MyApp extends StatefulWidget {
-  const MyApp({Key key}) : super(key: key);
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   State<MyApp> createState() => _MyAppState();
@@ -26,7 +26,7 @@ class _MyAppState extends State<MyApp> {
 }
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key key}) : super(key: key);
+  const HomeScreen({Key? key}) : super(key: key);
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -68,10 +68,10 @@ class VideoCall extends StatefulWidget {
   final String token;
 
   const VideoCall({
-    Key key,
-    this.apiKey,
-    this.sessionId,
-    this.token,
+    Key? key,
+    required this.apiKey,
+    required this.sessionId,
+    required this.token,
   }) : super(key: key);
 
   @override

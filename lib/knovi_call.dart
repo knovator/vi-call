@@ -13,10 +13,10 @@ class KnoviCall extends StatefulWidget {
   final String token;
 
   const KnoviCall({
-    Key key,
-    this.apiKey,
-    this.sessionId,
-    this.token,
+    Key? key,
+    required this.apiKey,
+    required this.sessionId,
+    required this.token,
   }) : super(key: key);
 
   @override
@@ -248,10 +248,10 @@ class VideoCallButtons extends StatelessWidget {
   final bool isCancelCall;
 
   const VideoCallButtons({
-    Key key,
-    this.onPress,
-    this.icon,
-    this.isCancelCall,
+    Key? key,
+    required this.onPress,
+    required this.icon,
+    required this.isCancelCall,
   }) : super(key: key);
 
   @override
